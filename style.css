@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://cdn.imweb.me/upload/S202207202685e30f16e24/d02964b9990de.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.glassmorphism {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(51, 51, 51,0.5);
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+h1 {
+    color: #2c3e50;
+    font-size: 20px;
+}
+.icon {
+    display: block;
+    margin: 20px auto;
+    width: 240px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-box{
+    font-family: 'NPSfontBold';
+        width: 280px;
+        height: 40px;
+        font-size: 20px;
+        border: 0;
+        border-radius: 8px;
+        outline: none;
+        padding-left: 10px;
+        background-color: rgba(255,255,255,0.2);
+        border: 3px dashed white;
+}
+
+
+.txt {
+    color: white;
+}
+
+.chance{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'NPSfontBold';
+    display: block;
+    font-size: 2.2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.txt-2{
+    color: #2c3e50;
+    font-size: 20px;
+    font-family: 'NPSfontBold';
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.txt-3{
+    color: #2c3e50;
+    font-size: 15px;
+    font-family: 'NPSfontBold';
+    margin-bottom: 15px;
+}
+
+.gr-button{
+    width: 100px;
+}
+
+@keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+  }
+  .blink {
+    animation: blink-effect 1.5s step-end infinite;
+  }
+
+@font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.main-img {
+    width: 20vw;
+    height: 20vh;
+  }
+
+@media screen and (max-width: 48rem) {
+    .main-img{
+        width: 20vw;
+    }
+}

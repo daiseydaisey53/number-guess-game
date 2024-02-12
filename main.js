@@ -48,13 +48,13 @@ userInput.addEventListener("focus", function() {
 
 
     if(userValue < computerNum){
-        resultArea.textContent = "UP!!"
+        resultArea.textContent = "큰 숫자를 입력해주세요"
       
     }else if(userValue > computerNum){
-        resultArea.textContent = "DOWN!!"
+        resultArea.textContent = "작은 숫자를 입력해주세요"
       
     }else {
-        resultArea.textContent = "Congratulate!!"
+        resultArea.textContent = "정답입니다!"
         gameOver = true;
 
     }
@@ -79,7 +79,12 @@ userInput.addEventListener("focus", function() {
     userInput.value = ""
     pickRandomNum()
 
-    resultArea.textContent="결과값이 여기 나옵니다!"
+    resultArea.textContent="다시 해보자!"
+    gameOver = false;
+    playButton.disabled = false;
+    chances = 5;
+    chanceArea.innerHTML = `남은 기회:${chances}`;
+    userValueList = [];
 
  }
  pickRandomNum();
